@@ -15,3 +15,10 @@ npm install
 ```
 cd Overlook
 ```
+
+5. Skriv herefter:
+```
+npm run dev
+```
+
+nu skulle den køre på en localhost :)
