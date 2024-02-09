@@ -2,12 +2,14 @@ import { NavLink } from "react-router-dom"
 import style from "./Navigation.module.scss"
 import Logo from "../../assets/Image/logo.svg"
 
+// komponent til navigationen på websiden
 export const Navigation = () => {
 
+    // Array med objekter, der indeholder links og tilhørende side titler
     const navArr = [
         { Link: "/", Page: "Forside"},
         { Link: "/destinations", Page: "Hoteller & Destinationer" },
-        { Link: "/about", Page: "Værelser" },
+        { Link: "/rooms", Page: "Værelser" },
         { Link: "/reservations", Page: "Reservationer" },
         { Link: "/login", Page: "Login" },
     ]

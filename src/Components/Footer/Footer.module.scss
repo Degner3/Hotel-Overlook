@@ -2,8 +2,6 @@
     background-color: var(--white);
     width: 100%;
     padding: 28px 0px 26px;
-    // padding-top: 28px;
-    // padding-bottom: 26px;
 
     .footerWrapper {
         width: 100%;
@@ -15,9 +13,7 @@
 
         p {
             color: var(--battleshipgray);
-            // font-family: ;
             font-size: 0.875rem;
-            // font-size: clamp(0.875rem, 0vw, 1rem);
             font-weight: 600;
             line-height: 19px;
         }
@@ -47,9 +43,7 @@
 
                 a {
                     text-decoration: none;
-                    // font-family: ;
                     font-size: 0.875rem;
-                    // font-size: clamp(0.875rem, 0vw, 1rem);
                     font-weight: 600;
                     line-height: 19px;
                     color: var(--battleshipgray);

@@ -1,12 +1,27 @@
 .frontPage {
     width: 100%;
-    // height: 100vh;
+    padding: 2rem;
 
-    div {
-        
-        img {
-            height: 200px;
-            width: 200px;
+    .FrontPageWrapper {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 1424px;
+
+
+
+        .newsContainer {
+            width: 100%;
+            // display: grid;
+            // grid-template-columns: 1fr 1fr 1fr;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 90px;
+
+            a {
+                color: var(--black);
+                text-decoration: none;
+            }
         }
+
     }
 }

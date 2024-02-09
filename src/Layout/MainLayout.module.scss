@@ -1,7 +1,9 @@
 .layout {
-    // background-color: yellow;
+    width: 100%;
+    margin: 0 auto;
 
     .content {
-
+        background-color: var(--antiflashwhite);
+        height: 100vh;
     }
 }

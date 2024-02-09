@@ -1,22 +1,24 @@
 import { useEffect, useState } from "react"
 
+// En custom hook til at hente data fra en given URL
+export const useFetch = (url) => {
 
+  // Opretter variable til at gemme data
+  const [data, setData] = useState();
+  // Opretter Variable til gemme hvis der fejl
+  const [error, setError] = useState();
 
-export const useFetch = () => {
+  // useEffect hook bruges til at udføre asynkrone operationer efter rendering
+  useEffect(() => {
 
-    const [data, setData] = useState()
-    const [error, setError] = useState()
+    // Fetcher data fra den givne URL
+    fetch(url)
+    .then((res) => res.json())
+    .then((data) => setData(data))
+    .catch((err) => setError(err));
+  }, [url]);
 
-
-    useEffect(() => {
-        
-
-        fetch(url)
-        .then((res) => res.json())
-        .then((data) => setData(data))
-        .catch((err) => console.error(err))
-    
-      }, [url])
-
-  return data;
+  // Returnerer data og error, så de kan bruges
+  return { data, error };
 }
+
