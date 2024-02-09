@@ -21,4 +21,4 @@ cd Overlook
 npm run dev
 ```
 
-nu skulle den køre på en localhost :)
+nu skulle den køre på en localhost 
